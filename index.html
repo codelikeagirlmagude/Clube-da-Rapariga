@@ -28,6 +28,37 @@
             <img src="Imagens\1=raparigaschegamaoEnsino.jpg" alt="Alunos em Aula">
         </div>
     </section>
+<section class="content" id="iniciativas">
+    <h2>Iniciativas para Encorajar as Raparigas a Voltarem à Escola</h2>
+    <div class="tab-container">
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'conscientizacao')">Programas de Conscientização e Educação Comunitária</button>
+            <button class="tablinks" onclick="openTab(event, 'apoio')">Apoio Econômico e Incentivos</button>
+            <button class="tablinks" onclick="openTab(event, 'mentoria')">Programas de Mentoria e Suporte Psicológico</button>
+            <button class="tablinks" onclick="openTab(event, 'reintegracao')">Reintegração Escolar</button>
+        </div>
+
+        <div id="conscientizacao" class="tabcontent" style="display: block;">
+            <h3>Programas de Conscientização e Educação Comunitária</h3>
+            <p>Estamos empenhados em promover a conscientização e educação comunitária para que as meninas entendam a importância de continuar seus estudos e tenham o apoio necessário para enfrentar desafios.</p>
+        </div>
+
+        <div id="apoio" class="tabcontent">
+            <h3>Apoio Econômico e Incentivos</h3>
+            <p>Oferecemos suporte econômico e incentivos para ajudar as meninas a superar barreiras financeiras que possam impedi-las de retornar à escola.</p>
+        </div>
+
+        <div id="mentoria" class="tabcontent">
+            <h3>Programas de Mentoria e Suporte Psicológico</h3>
+            <p>Nossos programas de mentoria e suporte psicológico visam fortalecer a autoestima e resiliência das meninas, para que estejam preparadas para os desafios educacionais.</p>
+        </div>
+
+        <div id="reintegracao" class="tabcontent">
+            <h3>Reintegração Escolar</h3>
+            <p>Trabalhamos para reintegrar as meninas ao sistema escolar, garantindo que tenham os recursos e o apoio necessários para concluir sua educação.</p>
+        </div>
+    </div>
+</section>
 
 
     <section class="content" id="contacto">
@@ -50,3 +81,18 @@
     </footer>
 </body>
 </html>
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
