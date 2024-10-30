@@ -138,3 +138,19 @@ footer {
     color: #1565C0;
 }
 
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 600px) {
+    .tab {
+        flex-direction: column;
+    }
+
+    .tab button {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .tabcontent {
+        padding: 10px;
+    }
+}
