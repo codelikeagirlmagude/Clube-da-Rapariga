@@ -93,3 +93,48 @@ footer {
         font-size: 18px;
     }
 }
+.tab-container {
+    background-color: #E3F2FD;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1976D2;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.tab button:hover {
+    background-color: #64B5F6;
+}
+
+.tab button.active {
+    background-color: #1565C0;
+    color: #fff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 15px;
+    background-color: #E3F2FD;
+    border-top: 1px solid #1565C0;
+    color: #333;
+}
+
+.tabcontent h3 {
+    color: #1565C0;
+}
+
